@@ -1,0 +1,94 @@
+header {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    background-color: transparent; // Default background
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    padding: 0 5%;
+    transition: background-color 0.3s; // Smooth transition for background color
+
+    /* Add background and effects when scrolled */
+    &.scrolled {
+        background-color: #1b1b1b; // Background color when scrolled
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); // Optional shadow for better separation
+    }
+
+    /* Logo styles */
+    .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #aaa;
+        }
+    }
+
+    /* Navigation links */
+    .nav-link {
+        color: white;
+        text-decoration: none;
+        margin: 0 20px;
+        transition: color 0.3s;
+
+        &:hover {
+            color: $pretty; // Ensure $pretty is defined elsewhere in your variables
+        }
+    }
+
+    /* Style for active router links */
+    .router-link-active {
+        font-weight: bold;
+    }
+
+    /* Example of a hover effect or state for the navigation container */
+    .before {
+        background-color: #e5e5e5;
+        border-radius: 50%;
+        transition: all 0.3s;
+    }
+}
+
+/* State for when the header is hidden */
+.stop {
+    position: fixed;
+    opacity: 0;
+    width: 100%;
+    top: 0;
+    height: 10px;
+    transition: all 0.3s;
+}
+
+/* Fullscreen navigation menu */
+.start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    position: fixed;
+    background-color: transparent;
+    backdrop-filter: blur(100px);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    z-index: 1;
+    transition: all 0.3s;
+
+    a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #aaa; // Add hover effect for menu links
+        }
+    }
+}

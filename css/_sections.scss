@@ -1,0 +1,355 @@
+.Home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    position: relative;
+    /* Required for the gradient overlay */
+    overflow: hidden;
+
+    .background-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        /* Push video behind other content */
+    }
+
+    /* Gradient overlay */
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        /* Start at the bottom of the section */
+        left: 0;
+        width: 100%;
+        height: 150px;
+        /* Adjust height for the fade length */
+        background: linear-gradient(to bottom, transparent, #1b1b1b);
+        z-index: 0;
+        /* Ensure it sits above the video but behind the text */
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 700px;
+        z-index: 1;
+        /* Ensure text stays above the gradient overlay */
+
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: $text-color;
+        }
+
+        p {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: $secondary-color;
+        }
+    }
+}
+
+/* Next section with #1b1b1b background */
+.next-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1b1b1b;
+    padding: 100px 20px;
+    color: white;
+
+    .next {
+        width: 100%;
+        max-width: 700px;
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+
+    p {
+        font-size: 1rem; /* Slightly larger text */
+        line-height: 1.6; /* Comfortable spacing */
+        color: rgba(204, 204, 204, 0.9); /* Subtle text color */
+        margin-bottom: 20px; /* Space below the paragraph */
+
+        strong {
+            color: #ffffff; /* Make bold text stand out */
+            font-weight: bold; /* Extra emphasis */
+            text-decoration: underline; /* Optional underline */
+            transition: color 0.3s ease; /* Smooth hover transition */
+
+            &:hover {
+                color: $pretty; /* Highlight on hover */
+            }
+        }
+    }
+    span {
+        background-color: #101010;
+        padding: 10px;
+        border-radius: 5px;
+        color: rgb(0, 255, 225);
+        font-weight: 300;
+    }
+}
+
+
+
+.textanimation {
+    animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both, textanimation 8s ease-in-out 2s infinite;
+
+    @keyframes textanimation {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-15px);
+        }
+    }
+
+    @keyframes text-focus-in {
+        0% {
+            filter: blur(12px);
+            opacity: 0;
+        }
+
+        100% {
+            filter: blur(0px);
+            opacity: 1;
+        }
+    }
+}
+
+
+
+video {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 200px;
+    padding: 250px 15% 0px;
+    background: $background-color;
+
+    h2,
+    h3,
+    p,
+    a {
+        color: $secondary-color;
+    }
+
+    .contactInfo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: space-between;
+    }
+
+    svg {
+        margin: 0 20px;
+    }
+}
+
+/* About section styles */
+.about {
+    background-color: $background-color;
+    padding: 200px 20px 50px;
+    color: $text-color;
+    text-align: left;
+    font-family: $font-family;
+
+    img {
+        display: block;
+        margin: 0 auto 75px;
+        background-color: #101010;
+        border-radius: 100%;
+    }
+
+    .container {
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.6;
+        /* Improve readability */
+
+        .title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: $text-hover-color;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .description {
+            font-size: 1rem;
+            margin-bottom: 40px;
+            /* Add space for lines */
+            color: rgba(204, 204, 204, 0.9);
+            /* Slightly lighter text */
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $text-hover-color;
+                /* Turn white on hover */
+            }
+
+            strong {
+                color: $text-hover-color;
+                font-weight: bold;
+                text-decoration: none;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: $text-hover-color;
+                }
+            }
+        }
+
+        .divider {
+            width: 5px;
+            /* Thin vertical line */
+            height: 40px;
+            /* Line height */
+            background-color: $divider-color;
+            /* Subtle divider color */
+            margin: -30px 0 30px;
+            /* Adjust spacing to align with paragraphs */
+            display: inline-block;
+            vertical-align: middle;
+            animation: floatUpDown 3s ease-in-out infinite;
+            /* Floating animation */
+            transition: background-color 0.3s ease;
+            /* Smooth color transition */
+
+            &:hover {
+                background-color: $text-hover-color;
+                /* Turn white on hover */
+                animation: none;
+                /* Stop floating animation on hover */
+            }
+        }
+    }
+}
+
+/* Dashed line section */
+.dashed-line {
+    padding: 100px 0;
+}
+
+.effect1 {
+    width: 100%;
+    /* Full width of the line */
+    height: 20px;
+    /* Thickness of the line */
+    display: flex;
+    /* Create individual dashes using flexbox */
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+}
+
+.effect1 span {
+    width: 10px;
+    /* Width of each dash */
+    height: 30px;
+    /* Height of each dash */
+    background-color: white;
+    /* Dash color */
+    margin-right: 10px;
+    /* Gap between dashes */
+    animation: dash-up-down 8s infinite ease-in-out;
+}
+
+.effect1 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.effect1 span:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.effect1 span:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.effect1 span:nth-child(4) {
+    animation-delay: 3s;
+}
+
+.effect1 span:nth-child(5) {
+    animation-delay: 4s;
+}
+
+.effect1 span:nth-child(6) {
+    animation-delay: 5s;
+}
+
+.effect1 span:nth-child(7) {
+    animation-delay: 6s;
+}
+
+.effect1 span:nth-child(8) {
+    animation-delay: 7s;
+}
+
+/* Keyframes for dash animation */
+@keyframes dash-up-down {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        /* Default position */
+    }
+
+    50% {
+        transform: translateY(-50px);
+        /* Move dashes up slightly */
+    }
+}
+
+/* Floating divider */
+.floating-divider {
+    width: 50px;
+    /* Short divider width */
+    height: 5px;
+    /* Divider height */
+    background-color: white;
+    /* Divider color */
+    margin: 100px auto;
+    /* Center the divider */
+    animation: floatUpDown 3s infinite ease-in-out;
+    /* Smooth floating animation */
+}
+
+/* Floating animation keyframes */
+@keyframes floatUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+        /* Default position */
+    }
+
+    50% {
+        transform: translateY(15px);
+        /* Move up slightly */
+    }
+}

@@ -1,0 +1,28 @@
+// Example breakpoints
+$small: 576px;
+$medium: 768px;
+
+@media (max-width: $small) {
+    footer {
+        flex-wrap: wrap;
+        h2 {
+            text-align: center;
+        }
+    } 
+}
+
+@media (max-width: $medium) {
+    .links {
+        display: none;
+    }
+    #menu {
+        display: block;
+    }
+}
+
+@media (min-width: $medium + 1) {
+    #menu {
+        display: none; /* Hide menu at larger screen sizes */
+    }
+}
+

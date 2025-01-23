@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+ padding-top: 100px;
+}
+
+figure {
+    margin: 0;
+}
+
+.socials {
+    transition: stroke 0.3s;
+    &:hover {
+        stroke: $pretty;
+    }
+}
+
+h1, h2, p {
+    color: $secondary-color;
+}
+
+h1, h2 {
+    font-size: 2rem;
+}
+
+button {
+    background: $secondary-color;
+    color: black;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 15px 32px;
+    display: inline-block;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: background-color 0.5s, color 0.2s, letter-spacing 0.5s;
+    &:hover {
+        background: rgba(52, 52, 52, 0.85);
+        border: 1px solid rgb(255, 255, 255);
+        letter-spacing: 4px;
+        color: beige;
+        cursor: pointer;
+    }
+}
+
+/* Themed dashed line effect */
+.theme-divider {
+    width: 225px; /* Full width of the line */
+    height: 30px; /* Thinner line for a subtle effect */
+    display: flex; /* Create individual dashes using flexbox */
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+    margin: 0; /* Add spacing for consistency */
+    padding: 50px 0;
+
+    span {
+        width: 10px; /* Slightly wider dashes */
+        height: 30px; /* Equal height and width */
+        background-color: white; /* Dash color */
+        margin-right: 15px; /* Larger gap between dashes */
+        animation: dash-up-down 8s infinite ease-in-out; /* Faster animation for a subtle theme */
+
+        &:nth-child(1) { animation-delay: 0s; }
+        &:nth-child(2) { animation-delay: 1s; }
+        &:nth-child(3) { animation-delay: 2s; }
+        &:nth-child(4) { animation-delay: 3s; }
+        &:nth-child(5) { animation-delay: 4s; }
+    }
+}

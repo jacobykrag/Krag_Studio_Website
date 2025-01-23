@@ -1,0 +1,21 @@
+/* Footer styles */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 15% 200px; /* Adjusted for padding consistency */
+    background: $background-color;
+
+    a {
+        margin: 0 20px;
+        color: white;
+        text-decoration: none;
+        transition: letter-spacing 0.3s, color 0.3s;
+
+        &:hover {
+            letter-spacing: 1px;
+            color: $pretty;
+        }
+    }
+}

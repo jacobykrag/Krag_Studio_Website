@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Router Example</title>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://unpkg.com/vue-router@4"></script>
+    <script type="module" src="js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/scroll.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <router-link to="/" class="logo"><img src="assets/images/Logo.png" width="250px" alt=""
+                    srcset=""></router-link>
+            <nav>
+                <router-link to="/" class="nav-link links">Art</router-link>
+                <router-link to="/about" class="nav-link links">About</router-link>
+                <router-link to="/contact" class="nav-link links">Contact</router-link>
+                <a href="https://www.facebook.com/KragStudio" target="_blank" class="nav-link links">
+                    <svg class="socials" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="White" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-facebook">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/krag_studio/" target="_blank" class="nav-link links">
+                    <svg class="socials" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="White" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-instagram">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a id="menu" href="#">
+                    <img class="before" src="assets/svgs/circle.svg" alt="" srcset="">
+                </a>
+            </nav>
+        </header>
+        <div id="mobile" class="stop">
+            <router-link class="menulink" to="/">Art</router-link>
+            <router-link class="menulink" to="/about">About</router-link>
+            <router-link class="menulink" to="/contact">Contact</router-link>
+        </div>
+        <router-view></router-view>
+        <footer>
+            <h2>Are you lost on the site 🤔</h2>
+            <div>
+                <a href="https://www.facebook.com/KragStudio" target="_blank" class="nav-link">
+                    <svg class="socials" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="White" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-facebook">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/krag_studio/" target="_blank" class="nav-link">
+                    <svg class="socials" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="White" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-instagram">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+            </div>
+            <div>
+                <router-link to="/" class="nav-link">Art</router-link>
+                <router-link to="/about" class="nav-link">About</router-link>
+                <router-link to="/contact" class="nav-link">Contact</router-link>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
