@@ -14,7 +14,7 @@ header {
 
     /* Add background and effects when scrolled */
     &.scrolled {
-        background-color: #1b1b1b; // Background color when scrolled
+        background-color: $background-color; // Background color when scrolled
         box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); // Optional shadow for better separation
     }
 

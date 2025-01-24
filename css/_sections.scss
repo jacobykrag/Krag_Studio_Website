@@ -28,7 +28,7 @@
         width: 100%;
         height: 150px;
         /* Adjust height for the fade length */
-        background: linear-gradient(to bottom, transparent, #1b1b1b);
+        background: linear-gradient(to bottom, transparent, $background-color);
         z-index: 0;
         /* Ensure it sits above the video but behind the text */
     }
@@ -62,7 +62,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #1b1b1b;
+    background-color: $background-color;
     padding: 100px 20px;
     color: white;
 
@@ -72,6 +72,24 @@
         img {
             width: 100%;
             border-radius: 10px;
+        }
+        div {
+            background: #101010;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 7px 7px 20px 1px #000;
+        }
+        .highlight_1 {
+            background-color: #ffffff;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: 300;
+            color: $primary-color;
+        }
+        .product {
+            font-size: 12px;
+            display: inline-block;
+            animation: textanimation2 3s infinite ease-in-out;
         }
     }
 
@@ -84,7 +102,6 @@
         strong {
             color: #ffffff; /* Make bold text stand out */
             font-weight: bold; /* Extra emphasis */
-            text-decoration: underline; /* Optional underline */
             transition: color 0.3s ease; /* Smooth hover transition */
 
             &:hover {
@@ -92,16 +109,18 @@
             }
         }
     }
-    span {
+    .highlight_2 {
         background-color: #101010;
         padding: 10px;
         border-radius: 5px;
-        color: rgb(0, 255, 225);
+        color: $pretty;
         font-weight: 300;
     }
 }
 
-
+.fadeIn {
+    animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
 
 .textanimation {
     animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both, textanimation 8s ease-in-out 2s infinite;
@@ -115,6 +134,17 @@
 
         50% {
             transform: translateY(-15px);
+        }
+    }
+    @keyframes textanimation2 {
+
+        0%,
+        100% {
+            transform: translateY(-5px);
+        }
+
+        50% {
+            transform: translateY(-10px);
         }
     }
 
@@ -160,7 +190,7 @@ video {
     .contactInfo {
         display: flex;
         flex-wrap: wrap;
-        gap: 50px;
+        gap: 30px;
         justify-content: space-between;
     }
 
