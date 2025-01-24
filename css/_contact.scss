@@ -1,0 +1,26 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 200px;
+    padding: 250px 15% 0px;
+    background: $background-color;
+
+    h2,
+    h3,
+    p,
+    a {
+        color: $secondary-color;
+    }
+
+    .contactInfo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+    svg {
+        margin: 0 20px;
+    }
+}

@@ -8,7 +8,10 @@ $medium: 768px;
         h2 {
             text-align: center;
         }
-    } 
+    }
+    h3 {
+        line-height: 2.5;
+    }
 }
 
 @media (max-width: $medium) {
@@ -17,6 +20,9 @@ $medium: 768px;
     }
     #menu {
         display: block;
+    }
+    .roadmap {
+        padding: 0;
     }
 }
 

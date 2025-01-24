@@ -1,0 +1,207 @@
+.Home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+
+    .background-video {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 150px;
+        background: linear-gradient(to bottom, transparent, $background-color);
+        z-index: 0;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 700px;
+        z-index: 1;
+
+        h1 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: $text-color;
+        }
+
+        p {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            color: $secondary-color;
+        }
+    }
+}
+
+.next-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $background-color;
+    padding: 100px 20px;
+    color: white;
+
+    .intro {
+        width: 100%;
+        max-width: 700px;
+
+        div {
+            background: #101010;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 7px 7px 20px 1px #000;
+        }
+
+        .highlight_1 {
+            background-color: #ffffff;
+            padding: 5px;
+            border-radius: 5px;
+            font-weight: 300;
+            color: $primary-color;
+        }
+    }
+
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: rgba(204, 204, 204, 0.9);
+        margin-bottom: 20px;
+
+        strong {
+            color: #ffffff;
+            font-weight: bold;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $pretty;
+            }
+        }
+    }
+}
+
+.next {
+    width: 100%;
+    max-width: 1200px;
+
+    .highlight_2 {
+        background-color: black;
+        padding: 10px;
+        border-radius: 5px;
+        color: $pretty;
+        font-weight: 300;
+    }
+
+    .product {
+        font-size: 12px;
+        display: inline-block;
+        animation: textanimation2 3s infinite ease-in-out;
+    }
+}
+
+.roadmap {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    padding: 50px 20px;
+    position: relative;
+
+    .timeline {
+        width: 5px;
+        background-color: $pretty;
+        border-radius: 5px;
+        position: relative;
+    }
+
+    .roadmap-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        figure {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: flex-start;
+            max-width: 900px;
+
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 5px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            }
+
+            figcaption {
+                font-size: 0.9rem;
+                color: rgba(255, 255, 255, 0.8);
+            }
+
+            h3 {
+                font-size: 1rem;
+                color: #fff;
+                font-weight: bold;
+            }
+            .showcase {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                img {
+                    max-width: 400px;
+                }
+            }
+        }
+    }
+}
+
+.image-title {
+    padding: 5px;
+    border: solid $pretty;
+    border-radius: 5px;
+    font-weight: 300;
+    color: $pretty;
+}
+
+.fadeIn {
+    animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.textanimation {
+    animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both, textanimation 8s ease-in-out 2s infinite;
+}
+
+video {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+
+.divider {
+    max-width: 800px;
+}
+
+iframe {
+    width: 100%;
+    max-width: 560px;
+}

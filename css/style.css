@@ -86,10 +86,52 @@ button:hover {
   animation-delay: 4s;
 }
 
+@keyframes textanimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+@keyframes textanimation2 {
+  0%, 100% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}
+@keyframes dash-up-down {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-50px);
+  }
+}
 header {
   position: fixed;
   top: 0;
-  z-index: 2;
+  z-index: 3;
   background-color: transparent;
   color: white;
   display: flex;
@@ -146,6 +188,9 @@ header .before {
   height: 10px;
   transition: all 0.3s;
 }
+.stop a {
+  display: none;
+}
 
 /* Fullscreen navigation menu */
 .start {
@@ -161,13 +206,14 @@ header .before {
   width: 100%;
   height: 100vh;
   top: 0;
-  z-index: 1;
+  z-index: 2;
   transition: all 0.3s;
 }
 .start a {
   color: white;
   text-decoration: none;
   transition: color 0.3s;
+  font-size: 1.5rem;
 }
 .start a:hover {
   color: #aaa;
@@ -179,9 +225,7 @@ header .before {
   justify-content: center;
   height: 90vh;
   position: relative;
-  /* Required for the gradient overlay */
   overflow: hidden;
-  /* Gradient overlay */
 }
 .Home .background-video {
   position: fixed;
@@ -192,20 +236,16 @@ header .before {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -1;
-  /* Push video behind other content */
 }
 .Home::after {
   content: "";
   position: absolute;
   bottom: 0;
-  /* Start at the bottom of the section */
   left: 0;
   width: 100%;
   height: 150px;
-  /* Adjust height for the fade length */
   background: linear-gradient(to bottom, transparent, #101012);
   z-index: 0;
-  /* Ensure it sits above the video but behind the text */
 }
 .Home .hero-section {
   display: flex;
@@ -214,7 +254,6 @@ header .before {
   text-align: center;
   max-width: 700px;
   z-index: 1;
-  /* Ensure text stays above the gradient overlay */
 }
 .Home .hero-section h1 {
   font-size: 2rem;
@@ -228,7 +267,6 @@ header .before {
   color: #FFFFFF;
 }
 
-/* Next section with #1b1b1b background */
 .next-section {
   display: flex;
   flex-direction: column;
@@ -237,52 +275,111 @@ header .before {
   padding: 100px 20px;
   color: white;
 }
-.next-section .next {
+.next-section .intro {
   width: 100%;
   max-width: 700px;
 }
-.next-section .next img {
-  width: 100%;
-  border-radius: 10px;
-}
-.next-section .next div {
+.next-section .intro div {
   background: #101010;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 7px 7px 20px 1px #000;
 }
-.next-section .next .highlight_1 {
+.next-section .intro .highlight_1 {
   background-color: #ffffff;
   padding: 5px;
   border-radius: 5px;
   font-weight: 300;
   color: #101012;
 }
-.next-section .next .product {
-  font-size: 12px;
-  display: inline-block;
-  animation: textanimation2 3s infinite ease-in-out;
-}
 .next-section p {
-  font-size: 1rem; /* Slightly larger text */
-  line-height: 1.6; /* Comfortable spacing */
-  color: rgba(204, 204, 204, 0.9); /* Subtle text color */
-  margin-bottom: 20px; /* Space below the paragraph */
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(204, 204, 204, 0.9);
+  margin-bottom: 20px;
 }
 .next-section p strong {
-  color: #ffffff; /* Make bold text stand out */
-  font-weight: bold; /* Extra emphasis */
-  transition: color 0.3s ease; /* Smooth hover transition */
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 .next-section p strong:hover {
-  color: #ffe8a2; /* Highlight on hover */
+  color: #ffe8a2;
 }
-.next-section .highlight_2 {
-  background-color: #101010;
+
+.next {
+  width: 100%;
+  max-width: 1200px;
+}
+.next .highlight_2 {
+  background-color: black;
   padding: 10px;
   border-radius: 5px;
   color: #ffe8a2;
   font-weight: 300;
+}
+.next .product {
+  font-size: 12px;
+  display: inline-block;
+  animation: textanimation2 3s infinite ease-in-out;
+}
+
+.roadmap {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+  padding: 50px 20px;
+  position: relative;
+}
+.roadmap .timeline {
+  width: 5px;
+  background-color: #ffe8a2;
+  border-radius: 5px;
+  position: relative;
+}
+.roadmap .roadmap-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.roadmap .roadmap-content figure {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  max-width: 900px;
+}
+.roadmap .roadmap-content figure img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.roadmap .roadmap-content figure figcaption {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+.roadmap .roadmap-content figure h3 {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: bold;
+}
+.roadmap .roadmap-content figure .showcase {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.roadmap .roadmap-content figure .showcase img {
+  max-width: 400px;
+}
+
+.image-title {
+  padding: 5px;
+  border: solid #ffe8a2;
+  border-radius: 5px;
+  font-weight: 300;
+  color: #ffe8a2;
 }
 
 .fadeIn {
@@ -291,32 +388,6 @@ header .before {
 
 .textanimation {
   animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both, textanimation 8s ease-in-out 2s infinite;
-}
-@keyframes textanimation {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
-}
-@keyframes textanimation2 {
-  0%, 100% {
-    transform: translateY(-5px);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-@keyframes text-focus-in {
-  0% {
-    filter: blur(12px);
-    opacity: 0;
-  }
-  100% {
-    filter: blur(0px);
-    opacity: 1;
-  }
 }
 
 video {
@@ -329,31 +400,15 @@ video {
   z-index: -1;
 }
 
-.contact {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 200px;
-  padding: 250px 15% 0px;
-  background: #101012;
-}
-.contact h2,
-.contact h3,
-.contact p,
-.contact a {
-  color: #FFFFFF;
-}
-.contact .contactInfo {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: space-between;
-}
-.contact svg {
-  margin: 0 20px;
+.divider {
+  max-width: 800px;
 }
 
-/* About section styles */
+iframe {
+  width: 100%;
+  max-width: 560px;
+}
+
 .about {
   background-color: #101012;
   padding: 200px 20px 50px;
@@ -371,7 +426,6 @@ video {
   max-width: 700px;
   margin: 0 auto;
   line-height: 1.6;
-  /* Improve readability */
 }
 .about .container .title {
   font-size: 2rem;
@@ -383,14 +437,11 @@ video {
 .about .container .description {
   font-size: 1rem;
   margin-bottom: 40px;
-  /* Add space for lines */
   color: rgba(204, 204, 204, 0.9);
-  /* Slightly lighter text */
   transition: color 0.3s ease;
 }
 .about .container .description:hover {
   color: white;
-  /* Turn white on hover */
 }
 .about .container .description strong {
   color: white;
@@ -403,39 +454,27 @@ video {
 }
 .about .container .divider {
   width: 5px;
-  /* Thin vertical line */
   height: 40px;
-  /* Line height */
   background-color: rgba(255, 255, 255, 0.2);
-  /* Subtle divider color */
   margin: -30px 0 30px;
-  /* Adjust spacing to align with paragraphs */
   display: inline-block;
   vertical-align: middle;
   animation: floatUpDown 3s ease-in-out infinite;
-  /* Floating animation */
   transition: background-color 0.3s ease;
-  /* Smooth color transition */
 }
 .about .container .divider:hover {
   background-color: white;
-  /* Turn white on hover */
   animation: none;
-  /* Stop floating animation on hover */
 }
 
-/* Dashed line section */
 .dashed-line {
   padding: 100px 0;
 }
 
 .effect1 {
   width: 100%;
-  /* Full width of the line */
   height: 20px;
-  /* Thickness of the line */
   display: flex;
-  /* Create individual dashes using flexbox */
   justify-content: space-between;
   overflow: hidden;
   position: relative;
@@ -443,13 +482,9 @@ video {
 
 .effect1 span {
   width: 10px;
-  /* Width of each dash */
   height: 30px;
-  /* Height of each dash */
   background-color: white;
-  /* Dash color */
   margin-right: 10px;
-  /* Gap between dashes */
   animation: dash-up-down 8s infinite ease-in-out;
 }
 
@@ -485,42 +520,38 @@ video {
   animation-delay: 7s;
 }
 
-/* Keyframes for dash animation */
-@keyframes dash-up-down {
-  0%, 100% {
-    transform: translateY(0);
-    /* Default position */
-  }
-  50% {
-    transform: translateY(-50px);
-    /* Move dashes up slightly */
-  }
-}
-/* Floating divider */
 .floating-divider {
   width: 50px;
-  /* Short divider width */
   height: 5px;
-  /* Divider height */
   background-color: white;
-  /* Divider color */
   margin: 100px auto;
-  /* Center the divider */
   animation: floatUpDown 3s infinite ease-in-out;
-  /* Smooth floating animation */
 }
 
-/* Floating animation keyframes */
-@keyframes floatUpDown {
-  0%, 100% {
-    transform: translateY(0);
-    /* Default position */
-  }
-  50% {
-    transform: translateY(15px);
-    /* Move up slightly */
-  }
+.contact {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 200px;
+  padding: 250px 15% 0px;
+  background: #101012;
 }
+.contact h2,
+.contact h3,
+.contact p,
+.contact a {
+  color: #FFFFFF;
+}
+.contact .contactInfo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+.contact svg {
+  margin: 0 20px;
+}
+
 /* Footer styles */
 footer {
   display: flex;
@@ -548,6 +579,9 @@ footer a:hover {
   footer h2 {
     text-align: center;
   }
+  h3 {
+    line-height: 2.5;
+  }
 }
 @media (max-width: 768px) {
   .links {
@@ -555,6 +589,9 @@ footer a:hover {
   }
   #menu {
     display: block;
+  }
+  .roadmap {
+    padding: 0;
   }
 }
 @media (min-width: 769px) {

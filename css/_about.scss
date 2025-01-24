@@ -1,0 +1,127 @@
+.about {
+    background-color: $background-color;
+    padding: 200px 20px 50px;
+    color: $text-color;
+    text-align: left;
+    font-family: $font-family;
+
+    img {
+        display: block;
+        margin: 0 auto 75px;
+        background-color: #101010;
+        border-radius: 100%;
+    }
+
+    .container {
+        max-width: 700px;
+        margin: 0 auto;
+        line-height: 1.6;
+
+        .title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: $text-hover-color;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .description {
+            font-size: 1rem;
+            margin-bottom: 40px;
+            color: rgba(204, 204, 204, 0.9);
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: $text-hover-color;
+            }
+
+            strong {
+                color: $text-hover-color;
+                font-weight: bold;
+                text-decoration: none;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: $text-hover-color;
+                }
+            }
+        }
+
+        .divider {
+            width: 5px;
+            height: 40px;
+            background-color: $divider-color;
+            margin: -30px 0 30px;
+            display: inline-block;
+            vertical-align: middle;
+            animation: floatUpDown 3s ease-in-out infinite;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: $text-hover-color;
+                animation: none;
+            }
+        }
+    }
+}
+
+.dashed-line {
+    padding: 100px 0;
+}
+
+.effect1 {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+}
+
+.effect1 span {
+    width: 10px;
+    height: 30px;
+    background-color: white;
+    margin-right: 10px;
+    animation: dash-up-down 8s infinite ease-in-out;
+}
+
+.effect1 span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.effect1 span:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.effect1 span:nth-child(3) {
+    animation-delay: 2s;
+}
+
+.effect1 span:nth-child(4) {
+    animation-delay: 3s;
+}
+
+.effect1 span:nth-child(5) {
+    animation-delay: 4s;
+}
+
+.effect1 span:nth-child(6) {
+    animation-delay: 5s;
+}
+
+.effect1 span:nth-child(7) {
+    animation-delay: 6s;
+}
+
+.effect1 span:nth-child(8) {
+    animation-delay: 7s;
+}
+
+.floating-divider {
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    margin: 100px auto;
+    animation: floatUpDown 3s infinite ease-in-out;
+}
