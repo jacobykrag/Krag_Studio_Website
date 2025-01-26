@@ -2,8 +2,8 @@ export default {
 template: `
 <main>
     <section class="Home">
-        <video autoplay muted loop class="background-video">
-            <source src="/assets/videos/TheForest.mp4" type="video/mp4">
+        <video autoplay muted loop playsinline class="background-video">
+            <source src="/assets/videos/TheForestCompressed.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="hero-section">
