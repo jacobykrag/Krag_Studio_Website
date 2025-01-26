@@ -71,57 +71,76 @@ template: `
                 <!-- Right-side content -->
                 <aside class="roadmap-content">
                     <figure>
-                        <h3><span class="image-title">Concept</span> <time datetime="2024-01-11">November 1,
-                                2024</time> :</h3>
-                        <img src="/assets/images/concept.webp" alt="Description of the image" loading="lazy">
+                        <h3><span class="image-title">Concept</span> <time datetime="2024-01-11">November 1, 2024</time>
+                            :</h3>
+                        <img src="/assets/images/concept.webp" width="1792" height="1024"
+                            alt="A conceptual illustration showcasing the initial creative idea" loading="lazy">
                         <figcaption>A mockup designed to illustrate the creative approach. <strong>Final assets may
                                 differ.</strong></figcaption>
                     </figure>
                     <figure>
                         <h3><span class="image-title">Scene preview 1</span> <time datetime="2024-01-12">December 1,
                                 2024</time> :</h3>
-                        <img src="/assets/images/ScenePreview1.jpg" alt="Description of the image" loading="lazy">
+                        <img src="/assets/images/ScenePreview1.webp" width="4096" height="3072"
+                            alt="A scene preview showcasing the environment layout and lighting" loading="lazy">
                     </figure>
                     <figure>
                         <h3><span class="image-title">Scene preview 2</span> <time datetime="2024-01-12">December 1,
                                 2024</time> :</h3>
-                        <img src="/assets/images/ScenePreview2.jpg" alt="Description of the image" loading="lazy">
+                        <img src="/assets/images/ScenePreview2.webp" width="3840" height="3840"
+                            alt="A refined preview of the environment with additional details" loading="lazy">
                     </figure>
                     <figure>
                         <h3><span class="image-title">Shaded Only</span> <time datetime="2025-01-1">January 1,
                                 2025</time> :</h3>
-                        <img src="/assets/images/ScenePreview3.jpg" alt="Description of the image" loading="lazy">
+                        <img src="/assets/images/ScenePreview3.webp" width="4096" height="4096"
+                            alt="A view of the environment with basic shading applied for clarity" loading="lazy">
                     </figure>
                     <figure>
                         <h3><span class="image-title">Flat Shading/Wireframe only</span> <time
-                                datetime="2025-01-1">January 1,
-                                2025</time> :</h3>
-                        <img src="/assets/images/Wireframe.jpg" alt="Description of the image" loading="lazy">
+                                datetime="2025-01-1">January 1, 2025</time> :</h3>
+                        <img src="/assets/images/Wireframe.webp" width="4096" height="4096"
+                            alt="A flat-shaded and wireframe view of the 3D scene for structural analysis"
+                            loading="lazy">
                     </figure>
                     <figure>
-                        <h3><span class="image-title">Models</span> <time datetime="2025-01-1">January 1,
-                                2025</time> :</h3>
+                        <h3><span class="image-title">Models</span> <time datetime="2025-01-1">January 1, 2025</time> :
+                        </h3>
                         <div class="showcase">
-                            <img src="/assets/images/Bag of potatoes.jpg" alt="" loading="lazy">
-                            <img src="/assets/images/Barrel.jpg" alt="" loading="lazy">
-                            <img src="/assets/images/Bookcase.jpg" alt="" loading="lazy">
-                            <img src="/assets/images/Books.jpg" alt="" loading="lazy">
-                            <img src="/assets/images/Chair.jpg" alt="" loading="lazy">
-                            <img src="/assets/images/Coat rack.jpg" alt="" loading="lazy">
-                            <img src="/assets/images/Dreamcatcher.jpg" alt="" loading="lazy">
-                            <img src="/assets/images/Library lamp.jpg" alt="" loading="lazy">
-                            <img src="/assets/images/Old lamp.jpg" alt="" loading="lazy">
-                            <img src="/assets/images/Old stool.jpg" alt="" loading="lazy">
-                            <img src="/assets/images/Old table.jpg" alt="" loading="lazy">
-                            <img src="/assets/images/Plate with candles.jpg" alt="" loading="lazy">
-                            <img src="/assets/images/Raditator.jpg" alt="" loading="lazy">
-                            <img src="/assets/images/Suitcases.jpg" alt="" loading="lazy">
+                            <img src="/assets/images/Bag of potatoes.webp" width="2000" height="2000"
+                                alt="A bag filled with potatoes, ideal for rustic scenes" loading="lazy">
+                            <img src="/assets/images/Barrel.webp" width="2000" height="2000"
+                                alt="A wooden barrel, suitable for storage or decor" loading="lazy">
+                            <img src="/assets/images/Bookcase.webp" width="2000" height="2000"
+                                alt="A wooden bookcase with books, perfect for library environments" loading="lazy">
+                            <img src="/assets/images/Books.webp" width="2000" height="2000"
+                                alt="A collection of books stacked for decoration or reading" loading="lazy">
+                            <img src="/assets/images/Chair.webp" width="2000" height="2000"
+                                alt="An antique wooden chair for seating or decorative use" loading="lazy">
+                            <img src="/assets/images/Coat rack.webp" width="2000" height="2000"
+                                alt="A coat rack, suitable for entryways or period scenes" loading="lazy">
+                            <img src="/assets/images/Dreamcatcher.webp" width="2000" height="2000"
+                                alt="A hanging dreamcatcher for decorative or cultural settings" loading="lazy">
+                            <img src="/assets/images/Library lamp.webp" width="2000" height="2000"
+                                alt="A vintage library lamp to light up desks or tables" loading="lazy">
+                            <img src="/assets/images/Old lamp.webp" alt="An old-fashioned lamp for ambient lighting"
+                                width="2000" height="2000" loading="lazy">
+                            <img src="/assets/images/Old stool.webp" width="2000" height="2000"
+                                alt="A rustic wooden stool, perfect for simple seating" loading="lazy">
+                            <img src="/assets/images/Old-table.webp" width="2000" height="2000"
+                                alt="An aged wooden table, ideal for a vintage environment" loading="lazy">
+                            <img src="/assets/images/Plate-with-candles.webp" width="2000" height="2000"
+                                alt="A decorative plate with candles for a cozy atmosphere" loading="lazy">
+                            <img src="/assets/images/Radiator.webp" width="2000" height="2000"
+                                alt="A vintage radiator, useful for heating details in old buildings" loading="lazy">
+                            <img src="/assets/images/Suitcases.webp" width="2000" height="2000"
+                                alt="A stack of old suitcases for travel or vintage decor" loading="lazy">
                         </div>
                     </figure>
                     <figure>
                         <h3><span class="image-title">Planned Release Date</span> <time datetime="2025-03-2">February 3,
                                 2025</time> :</h3>
-                        <img src="/assets/images/message.jpg" alt="Description of the image" loading="lazy">
+                        <img src="/assets/images/message.webp" width="3840" height="2160" alt="Krag Studio developer message." loading="lazy">
                         <figcaption> <strong>Planned Release Date:</strong> February 3, 2025
                             <br>
                             Mark your calendars! The <strong>final version</strong> of this 3D asset pack is set to
@@ -159,17 +178,27 @@ template: `
                     <figure>
                         <h3><span class="image-title">Concept</span> <time datetime="2025-14-1">January 14,
                                 2025</time> :</h3>
-                        <iframe width="560" height="315"
-                            src="https://www.youtube.com/embed/J8kHpOwSovA?si=d3n00RiKuZfBIqRm"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <div class="youtube-container">
+                            <div class="youtube-thumbnail" onclick="loadVideo()">
+                                <img src="/assets/images/Scene.webp" width="3840" height="2160" alt="Video Thumbnail" loading="lazy">
+                                <button class="play-button">▶</button>
+                            </div>
+                            <div class="youtube-iframe" id="youtube-iframe" style="display: none;">
+                                <iframe src="" title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+
+
                         <figcaption><strong>Project Dragoon:</strong> Created in <strong>Unreal Engine 5</strong>, this
                             desolate desert scene guards a solemn mystery. A <strong>lone sword rests in stone</strong>,
                             surrounded by <strong>ancient seals</strong> that must never be broken. As a
                             <strong>tattered flag</strong> flutters in the arid winds, whispers of a <strong>forbidden
                                 past</strong> echo through the sands. <strong>Final assets may
-                                differ.</strong></figcaption>
+                                differ.</strong>
+                        </figcaption>
                     </figure>
                 </aside>
             </div>

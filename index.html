@@ -4,35 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Krag Studio creates unique 3D models designed for games, animations, and creative projects. Explore high-quality assets and follow our roadmap for upcoming releases.">
     <title>Krag Studio</title>
-    <link rel="icon" type="image/x-icon" href="/assets/feather.ico">
-    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
-    <script src="https://unpkg.com/vue-router@4/dist/vue-router.global.prod.js"></script>
-    <script type="module" src="js/app.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="/js/script.js"></script>
-    <script src="/js/scroll.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preload" href="/assets/fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="/assets/krag-studio-favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/style.css">
+    </noscript>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js" defer></script>
+    <script src="https://unpkg.com/vue-router@4/dist/vue-router.global.prod.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+    <script type="module" src="js/app.js" defer></script>
+    <script src="/js/script.js" defer></script>
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Krag Studio - Your Partner in 3D Creativity">
+    <meta property="og:description"
+        content="Krag Studio creates unique 3D models designed for games, animations, and creative projects. Explore high-quality assets and follow our roadmap for upcoming releases.">
+    <meta property="og:image" content="https://kragstudio.dk/assets/images/thumbnail.webp">
+    <meta property="og:url" content="https://kragstudio.dk">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Krag Studio - Your Partner in 3D Creativity">
+    <meta name="twitter:description"
+        content="Krag Studio creates unique 3D models designed for games, animations, and creative projects. Follow our roadmap for updates!">
+    <meta name="twitter:image" content="https://kragstudio.dk/assets/images/thumbnail.webp">
+
 </head>
+
+
 
 <body>
     <div id="app">
+        <cookie-banner></cookie-banner> <!-- Add the cookie banner here -->
         <header>
-            <router-link to="/" class="logo"><img src="assets/images/Logo.png" width="250px" alt=""
-                    srcset=""></router-link>
+            <router-link to="/" class="logo">
+                <img src="assets/svgs/krag-studio-logo.svg" alt="Krag Studio Logo" width="250" height="100">
+            </router-link>
             <nav>
                 <router-link to="/" class="nav-link links">Art</router-link>
                 <router-link to="/about" class="nav-link links">About</router-link>
                 <router-link to="/contact" class="nav-link links">Contact</router-link>
-                <a href="https://www.facebook.com/KragStudio" target="_blank" class="nav-link links">
+                <a href="https://www.facebook.com/KragStudio" target="_blank" class="nav-link links" aria-label="Visit Krag Studio on Facebook">
                     <svg class="socials" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                         fill="none" stroke="White" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="feather feather-facebook">
                         <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                     </svg>
                 </a>
-                <a href="https://www.instagram.com/krag_studio/" target="_blank" class="nav-link links">
+                <a href="https://www.instagram.com/krag_studio/" target="_blank" class="nav-link links" aria-label="Visit Krag Studio on Instagram">
                     <svg class="socials" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                         fill="none" stroke="White" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="feather feather-instagram">
@@ -42,7 +69,8 @@
                     </svg>
                 </a>
                 <div id="menu">
-                    <img class="before" src="assets/svgs/circle.svg" alt="" srcset="">
+                    <img class="before" src="assets/svgs/circle.svg" width="30" height="30" alt="Circle menu icon"
+                        srcset="">
                 </div>
             </nav>
         </header>
@@ -55,14 +83,14 @@
         <footer>
             <h2>Are you lost on the site 🤔</h2>
             <div>
-                <a href="https://www.facebook.com/KragStudio" target="_blank" class="nav-link">
+                <a href="https://www.facebook.com/KragStudio" target="_blank" class="nav-link" aria-label="Visit Krag Studio on Facebook">
                     <svg class="socials" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                         fill="none" stroke="White" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="feather feather-facebook">
                         <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                     </svg>
                 </a>
-                <a href="https://www.instagram.com/krag_studio/" target="_blank" class="nav-link">
+                <a href="https://www.instagram.com/krag_studio/" target="_blank" class="nav-link" aria-label="Visit Krag Studio on Instagram">
                     <svg class="socials" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                         fill="none" stroke="White" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="feather feather-instagram">
@@ -76,8 +104,9 @@
                 <router-link to="/" class="nav-link">Art</router-link>
                 <router-link to="/about" class="nav-link">About</router-link>
                 <router-link to="/contact" class="nav-link">Contact</router-link>
+                <router-link to="/privacy-policy" class="nav-link">Privacy Policy</router-link>
             </div>
-            <p>© 2025 Krag Studio. All rights reserved. <br> Vejle, Denmark.</p>
+            <p><strong>© 2025 Krag Studio.</strong>All rights reserved. <br> Vejle, Denmark.</p>
         </footer>
     </div>
 </body>

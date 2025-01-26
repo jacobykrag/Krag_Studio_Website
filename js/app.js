@@ -2,13 +2,15 @@ import Home from './components/Home.js';
 import About from './components/About.js';
 import Contact from './components/Contact.js';
 import NotFound from './components/NotFound.js';
-
+import PrivacyPolicy from './components/privacy_policy.js';
+import CookieBanner from './components/CookieBanner.js'; // Import the CookieBanner component
 
 // Define the routes
 const routes = [
     { path: '/', component: Home },
     { path: '/about', component: About },
     { path: '/contact', component: Contact },
+    { path: '/privacy-policy', component: PrivacyPolicy },
 
     // Catch-all route for 404
     { path: '/:pathMatch(.*)*', component: NotFound },
@@ -31,5 +33,12 @@ const router = VueRouter.createRouter({
 
 // Create the Vue app
 const app = Vue.createApp({});
+
+// Register components
+app.component('cookie-banner', CookieBanner);
+
+// Use the router
 app.use(router);
+
+// Mount the app
 app.mount('#app');

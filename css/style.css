@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -7,6 +6,7 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
+  background: #101012;
 }
 
 main {
@@ -24,11 +24,14 @@ figure {
   stroke: #ffe8a2;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   color: #FFFFFF;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-size: 2rem;
 }
 
@@ -54,21 +57,30 @@ button:hover {
 
 /* Themed dashed line effect */
 .theme-divider {
-  width: 225px; /* Full width of the line */
-  height: 30px; /* Thinner line for a subtle effect */
-  display: flex; /* Create individual dashes using flexbox */
+  width: 225px;
+  /* Full width of the line */
+  height: 30px;
+  /* Thinner line for a subtle effect */
+  display: flex;
+  /* Create individual dashes using flexbox */
   justify-content: space-between;
   overflow: hidden;
   position: relative;
-  margin: 0; /* Add spacing for consistency */
+  margin: 0;
+  /* Add spacing for consistency */
   padding: 50px 0;
 }
 .theme-divider span {
-  width: 10px; /* Slightly wider dashes */
-  height: 30px; /* Equal height and width */
-  background-color: white; /* Dash color */
-  margin-right: 15px; /* Larger gap between dashes */
-  animation: dash-up-down 8s infinite ease-in-out; /* Faster animation for a subtle theme */
+  width: 10px;
+  /* Slightly wider dashes */
+  height: 30px;
+  /* Equal height and width */
+  background-color: white;
+  /* Dash color */
+  margin-right: 15px;
+  /* Larger gap between dashes */
+  animation: dash-up-down 8s infinite ease-in-out;
+  /* Faster animation for a subtle theme */
 }
 .theme-divider span:nth-child(1) {
   animation-delay: 0s;
@@ -84,6 +96,117 @@ button:hover {
 }
 .theme-divider span:nth-child(5) {
   animation-delay: 4s;
+}
+
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #1b1b1b;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  z-index: 9999;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cookie-banner a {
+  color: #ffe8a2;
+  text-decoration: underline;
+  margin-right: 20px;
+}
+
+.privacy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+.privacy .privacy-policy {
+  padding: 50px 20px;
+  max-width: 800px;
+  margin: 0 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.privacy .privacy-policy h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+.privacy .privacy-policy p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: white;
+  margin-bottom: 15px;
+}
+.privacy .privacy-policy p a {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+.privacy .privacy-policy p a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+.not-found {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1b1b1b, #2c2c2c);
+  color: #fff;
+  text-align: center;
+}
+.not-found .content {
+  max-width: 500px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+.not-found .content h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #e63946;
+  animation: bounce 2s infinite ease-in-out;
+}
+.not-found .content p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+.not-found .content .home-link {
+  background: #FFFFFF;
+  color: black;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 15px 32px;
+  display: inline-block;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: background-color 0.5s, color 0.2s, letter-spacing 0.5s;
+}
+.not-found .content .home-link:hover {
+  background: rgba(52, 52, 52, 0.85);
+  border: 1px solid rgb(255, 255, 255);
+  letter-spacing: 4px;
+  color: beige;
+  cursor: pointer;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
 }
 
 @keyframes textanimation {
@@ -181,19 +304,18 @@ header .before {
 
 /* State for when the header is hidden */
 .stop {
-  position: fixed;
+  visibility: hidden;
   opacity: 0;
-  width: 100%;
-  top: 0;
-  height: 10px;
-  transition: all 0.3s;
+  height: 0;
+  transition: all 0.3s ease;
 }
 .stop a {
-  display: none;
+  visibility: hidden;
 }
 
 /* Fullscreen navigation menu */
 .start {
+  visibility: visible;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -404,9 +526,39 @@ video {
   max-width: 800px;
 }
 
-iframe {
+.youtube-container {
+  position: relative;
   width: 100%;
   max-width: 560px;
+}
+.youtube-container .youtube-thumbnail {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.youtube-container .youtube-thumbnail img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.youtube-container .youtube-thumbnail .play-button {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2rem;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.youtube-container .youtube-thumbnail .play-button:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.youtube-container .youtube-iframe {
+  display: none;
 }
 
 .about {
@@ -419,8 +571,10 @@ iframe {
 .about img {
   display: block;
   margin: 0 auto 75px;
-  background-color: #101010;
+  background-color: #000000;
   border-radius: 100%;
+  max-width: 250px;
+  height: auto;
 }
 .about .container {
   max-width: 700px;

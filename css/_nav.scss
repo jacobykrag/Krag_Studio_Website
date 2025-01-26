@@ -58,19 +58,18 @@ header {
 
 /* State for when the header is hidden */
 .stop {
-    position: fixed;
+    visibility: hidden;
     opacity: 0;
-    width: 100%;
-    top: 0;
-    height: 10px;
-    transition: all 0.3s;
+    height: 0;
+    transition: all 0.3s ease;
     a {
-        display: none;
+        visibility: hidden;
     }
-}
-
+  }
+  
 /* Fullscreen navigation menu */
 .start {
+    visibility: visible;
     display: flex;
     align-items: center;
     justify-content: center;

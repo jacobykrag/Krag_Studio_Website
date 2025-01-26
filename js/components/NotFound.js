@@ -1,9 +1,12 @@
 export default {
-    template: `
-        <main>
-            <h1>404 - Page Not Found</h1>
-            <p>The page you are looking for does not exist.</p>
-            <router-link to="/">Go back to Home</router-link>
-        </main>
-    `,
+template: `
+<main class="not-found">
+    <div class="content">
+        <h1>404</h1>
+        <p>Oops! The page you're looking for doesn't exist.</p>
+        <router-link to="/" class="home-link">Go back to Home</router-link>
+    </div>
+</main>
+
+`,
 };

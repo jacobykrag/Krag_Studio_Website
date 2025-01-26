@@ -201,7 +201,47 @@ video {
     max-width: 800px;
 }
 
-iframe {
-    width: 100%;
-    max-width: 560px;
+$thumbnail-width: 100%; // Juster for at ændre bredden på thumbnail
+$play-button-bg: rgba(0, 0, 0, 0.5); // Baggrundsfarve til play-knappen
+$play-button-hover-bg: rgba(0, 0, 0, 0.8); // Hover-baggrundsfarve til play-knappen
+$play-button-size: 2rem; // Størrelse på play-knappen
+
+.youtube-container {
+    position: relative;
+    width: $thumbnail-width;
+    max-width: 560px; // Giver en grænse for bredden af thumbnail
+
+    .youtube-thumbnail {
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: $thumbnail-width;
+            height: auto;
+            display: block;
+        }
+
+        .play-button {
+            position: absolute;
+            background: $play-button-bg;
+            color: white;
+            font-size: $play-button-size;
+            border: none;
+            border-radius: 50%;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+
+            &:hover {
+                background: $play-button-hover-bg;
+            }
+        }
+    }
+
+    .youtube-iframe {
+        display: none; // Skjuler iframe'en, indtil den aktiveres via JavaScript
+    }
 }

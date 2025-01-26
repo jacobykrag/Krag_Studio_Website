@@ -1,0 +1,6 @@
+# Tillad alle søgemaskiner at crawle hele sitet
+User-agent: *
+Disallow:
+
+# Angiv placeringen af dit XML-sitemap
+Sitemap: https://kragstudio.dk/sitemap.xml
