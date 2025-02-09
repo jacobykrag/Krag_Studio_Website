@@ -437,7 +437,7 @@ header .before {
   background-color: black;
   padding: 10px;
   border-radius: 5px;
-  color: #06B6D4;
+  color: #00d9ff;
   font-weight: 300;
 }
 .next .product {
@@ -455,12 +455,12 @@ header .before {
 }
 .roadmap .timeline {
   width: 5px;
-  background-color: #06B6D4;
+  background: linear-gradient(180deg, #00d9ff, #0062ff);
   border-radius: 5px;
   position: relative;
 }
 .roadmap .timelineAttachment {
-  background-color: #06B6D4;
+  background-color: #00d9ff;
   width: 100px;
   height: 5px;
   display: inline-block;
@@ -505,6 +505,16 @@ header .before {
   background-color: #101010;
   box-shadow: 7px 7px 20px 1px #000;
 }
+.roadmap .roadmap-content figure figcaption .divider {
+  width: 4px;
+  height: 20px;
+  background-color: hsl(189, 100%, 20%);
+  margin: 20px 0;
+  display: block;
+  vertical-align: middle;
+  animation: floatUpDown 4s ease-in-out infinite;
+  transition: background-color 0.3s ease;
+}
 .roadmap .roadmap-content figure h3 {
   font-size: 1rem;
   color: white;
@@ -533,10 +543,10 @@ header .before {
 
 .image-title {
   padding: 5px;
-  border: solid #06B6D4;
+  border: solid #00d9ff;
   border-radius: 5px;
   font-weight: 300;
-  color: #06B6D4;
+  color: #00d9ff;
   margin: 0 10px 0 15px;
 }
 
@@ -749,8 +759,11 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 50px;
-  padding: 50px 15% 200px; /* Adjusted for padding consistency */
-  background: #101012;
+  padding: 200px 15% 200px; /* Adjusted for padding consistency */
+  background: #050505;
+  border-top: 5px dashed;
+  border-color: white;
+  border-spacing: 15px;
 }
 footer a {
   margin: 0 20px;
@@ -762,13 +775,25 @@ footer a:hover {
   letter-spacing: 1px;
   color: #ffe8a2;
 }
+footer div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
 
 @media (max-width: 576px) {
   footer {
     flex-wrap: wrap;
+    align-items: center;
   }
   footer h2 {
     text-align: center;
+  }
+  footer div {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
   }
   h3 {
     line-height: 2.5;

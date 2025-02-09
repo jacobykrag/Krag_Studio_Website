@@ -12,7 +12,8 @@ template: `
     launch on <strong>February 3, 2025</strong>. Carefully crafted to ensure the <strong>highest
         quality</strong>, this release will provide you with <strong>versatile</strong> and
     <strong>polished assets</strong>, perfect for your creative projects.
-    <br><br>
+    <div class="divider"></div>
+    <br>
     Additionally, all <strong>future updates</strong> to this pack will be provided <strong>free
         of charge</strong>, ensuring you always have access to the <strong>latest
         improvements</strong> and additions.

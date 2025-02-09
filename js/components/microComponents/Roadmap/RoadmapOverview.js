@@ -3,11 +3,12 @@ import ScenePreview from './TheForgottenRoom/RoadmapPost_ScenePreview.js';
 import Models from './TheForgottenRoom/RoadmapPost_Models.js';
 import ReleaseDate from './TheForgottenRoom/RoadmapPost_ReleaseDate.js';
 import AssetPackProgressUpdate from './TheForgottenRoom/RoadmapPost_AssetPackProgressUpdate.js';
+import BandA from './TheForgottenRoom/RoadmapPost_BandA.js';
 import ProjectDragoonVideo from './ProjectDragoon/RoadmapPost_ProjectDragoonVideo.js';
 
 export default {
 
-components: { Concept, ScenePreview, Models, ReleaseDate, AssetPackProgressUpdate, ProjectDragoonVideo},
+components: { Concept, ScenePreview, Models, ReleaseDate, AssetPackProgressUpdate, BandA, ProjectDragoonVideo},
 template: `
 
 <div class="next">
@@ -22,6 +23,7 @@ template: `
             <Models />
             <ReleaseDate />
             <AssetPackProgressUpdate />
+            <BandA />
         </aside>
     </div>
     <div class="divider">
