@@ -85,7 +85,7 @@
         margin-bottom: 20px;
 
         strong {
-            color: #ffffff;
+            color: white;
             font-weight: bold;
             transition: color 0.3s ease;
 
@@ -98,13 +98,13 @@
 
 .next {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1150px;
 
     .highlight_2 {
         background-color: black;
         padding: 10px;
         border-radius: 5px;
-        color: $pretty;
+        color: $devOne;
         font-weight: 300;
     }
 
@@ -124,9 +124,16 @@
 
     .timeline {
         width: 5px;
-        background-color: $pretty;
+        background-color: $devOne;
         border-radius: 5px;
         position: relative;
+    }
+    .timelineAttachment {
+        background-color: $devOne;
+        width: 100px;
+        height: 5px;
+        display: inline-block;
+        border-radius: 5px;
     }
 
     .roadmap-content {
@@ -140,7 +147,7 @@
             flex-direction: column;
             gap: 10px;
             align-items: flex-start;
-            max-width: 900px;
+            width: 100%;
 
             img {
                 width: 100%;
@@ -149,23 +156,53 @@
                 box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             }
 
+            time {
+                font-weight: 400;
+                color: white;
+                background-color: rgb(0, 0, 0);
+                padding: 10px;
+                border-radius: 5px;
+            }
+            .posted {
+                color: $devThree;
+            }
+
             figcaption {
-                font-size: 0.9rem;
-                color: rgba(255, 255, 255, 0.8);
+                width: 100%;
+                padding: 20px;
+                margin: 25px 0;
+                font-size: 1rem;
+                color: rgb(255, 255, 255);
+                border-radius: 10px;
+                background-color: #101010;
+                box-shadow: 7px 7px 20px 1px #000;
             }
 
             h3 {
                 font-size: 1rem;
-                color: #fff;
+                color: white;
                 font-weight: bold;
+            }
+            .showcasewide {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: space-between;
+                gap: 15px;
+
+                img {
+                    width: 100%;
+                    max-width: 530px;
+                }
             }
             .showcase {
                 display: flex;
                 flex-wrap: wrap;
-                gap: 10px;
+                justify-content: space-evenly;
+                gap: 15px;
 
                 img {
-                    max-width: 400px;
+                    max-width: 350px;
                 }
             }
         }
@@ -174,10 +211,11 @@
 
 .image-title {
     padding: 5px;
-    border: solid $pretty;
+    border: solid $devOne;
     border-radius: 5px;
     font-weight: 300;
-    color: $pretty;
+    color: $devOne;
+    margin: 0 10px 0 15px;
 }
 
 .fadeIn {
@@ -199,17 +237,18 @@ video {
 
 .divider {
     max-width: 800px;
+    margin: auto;
 }
 
 $thumbnail-width: 100%; // Juster for at ændre bredden på thumbnail
 $play-button-bg: rgba(0, 0, 0, 0.5); // Baggrundsfarve til play-knappen
 $play-button-hover-bg: rgba(0, 0, 0, 0.8); // Hover-baggrundsfarve til play-knappen
-$play-button-size: 2rem; // Størrelse på play-knappen
+$play-button-size: 1.5rem; // Størrelse på play-knappen
 
 .youtube-container {
     position: relative;
     width: $thumbnail-width;
-    max-width: 560px; // Giver en grænse for bredden af thumbnail
+    max-width: 800px; // Giver en grænse for bredden af thumbnail
 
     .youtube-thumbnail {
         position: relative;
@@ -231,7 +270,7 @@ $play-button-size: 2rem; // Størrelse på play-knappen
             font-size: $play-button-size;
             border: none;
             border-radius: 50%;
-            padding: 10px 20px;
+            padding: 11px 15px;
             cursor: pointer;
             transition: background 0.3s ease;
 

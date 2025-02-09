@@ -421,7 +421,7 @@ header .before {
   margin-bottom: 20px;
 }
 .next-section p strong {
-  color: #ffffff;
+  color: white;
   font-weight: bold;
   transition: color 0.3s ease;
 }
@@ -431,13 +431,13 @@ header .before {
 
 .next {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1150px;
 }
 .next .highlight_2 {
   background-color: black;
   padding: 10px;
   border-radius: 5px;
-  color: #ffe8a2;
+  color: #06B6D4;
   font-weight: 300;
 }
 .next .product {
@@ -455,9 +455,16 @@ header .before {
 }
 .roadmap .timeline {
   width: 5px;
-  background-color: #ffe8a2;
+  background-color: #06B6D4;
   border-radius: 5px;
   position: relative;
+}
+.roadmap .timelineAttachment {
+  background-color: #06B6D4;
+  width: 100px;
+  height: 5px;
+  display: inline-block;
+  border-radius: 5px;
 }
 .roadmap .roadmap-content {
   flex: 1;
@@ -470,7 +477,7 @@ header .before {
   flex-direction: column;
   gap: 10px;
   align-items: flex-start;
-  max-width: 900px;
+  width: 100%;
 }
 .roadmap .roadmap-content figure img {
   width: 100%;
@@ -478,30 +485,59 @@ header .before {
   border-radius: 5px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+.roadmap .roadmap-content figure time {
+  font-weight: 400;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 5px;
+}
+.roadmap .roadmap-content figure .posted {
+  color: #3B82F6;
+}
 .roadmap .roadmap-content figure figcaption {
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  padding: 20px;
+  margin: 25px 0;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  background-color: #101010;
+  box-shadow: 7px 7px 20px 1px #000;
 }
 .roadmap .roadmap-content figure h3 {
   font-size: 1rem;
-  color: #fff;
+  color: white;
   font-weight: bold;
+}
+.roadmap .roadmap-content figure .showcasewide {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 15px;
+}
+.roadmap .roadmap-content figure .showcasewide img {
+  width: 100%;
+  max-width: 530px;
 }
 .roadmap .roadmap-content figure .showcase {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  justify-content: space-evenly;
+  gap: 15px;
 }
 .roadmap .roadmap-content figure .showcase img {
-  max-width: 400px;
+  max-width: 350px;
 }
 
 .image-title {
   padding: 5px;
-  border: solid #ffe8a2;
+  border: solid #06B6D4;
   border-radius: 5px;
   font-weight: 300;
-  color: #ffe8a2;
+  color: #06B6D4;
+  margin: 0 10px 0 15px;
 }
 
 .fadeIn {
@@ -524,12 +560,13 @@ video {
 
 .divider {
   max-width: 800px;
+  margin: auto;
 }
 
 .youtube-container {
   position: relative;
   width: 100%;
-  max-width: 560px;
+  max-width: 800px;
 }
 .youtube-container .youtube-thumbnail {
   position: relative;
@@ -547,10 +584,10 @@ video {
   position: absolute;
   background: rgba(0, 0, 0, 0.5);
   color: white;
-  font-size: 2rem;
+  font-size: 1.5rem;
   border: none;
   border-radius: 50%;
-  padding: 10px 20px;
+  padding: 11px 15px;
   cursor: pointer;
   transition: background 0.3s ease;
 }
