@@ -1,6 +1,7 @@
 // Example breakpoints
 $small: 576px;
 $medium: 768px;
+$mediumPlus: 1024px;
 
 @media (max-width: $small) {
     footer {
@@ -19,6 +20,44 @@ $medium: 768px;
     h3 {
         line-height: 2.5;
     }
+    .products {
+        gap: 25px;
+        padding: 100px;
+        justify-content: flex-end;
+        span img {
+            margin: 25px 0;
+        }
+        p {
+            margin: 0;
+        }
+    }
+    .forgottenRoomMain {
+        padding: 100px 20px;
+        .overview, .models {
+            padding: 5px;
+            .imageShowcase {
+                justify-content: center;
+                margin-top: 20px;
+                img {
+                    max-width: 280px;
+                }
+            }
+            .flex {
+                margin-top: 100px;
+                gap: 20px;
+            }
+        }
+        .imageShowcase {
+            justify-content: center;
+        }
+    }
+    .guide {
+        padding: 100px 20px;
+    }
+    .products {
+        padding: 20px;
+        justify-content: flex-start;
+    }
 }
 
 @media (max-width: $medium) {
@@ -28,9 +67,10 @@ $medium: 768px;
     #menu {
         display: block;
     }
-    .roadmap {
-        padding: 0;
-    }
+}
+
+@media (max-width: $mediumPlus) {
+
 }
 
 @media (min-width: $medium + 1) {

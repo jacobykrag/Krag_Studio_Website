@@ -115,119 +115,6 @@
     }
 }
 
-.roadmap {
-    display: flex;
-    align-items: stretch;
-    gap: 20px;
-    padding: 50px 20px;
-    position: relative;
-
-    .timeline {
-        width: 5px;
-        background: linear-gradient(180deg, #00d9ff, #0062ff);
-        border-radius: 5px;
-        position: relative;
-    }
-    .timelineAttachment {
-        background-color: $devOne;
-        width: 100px;
-        height: 5px;
-        display: inline-block;
-        border-radius: 5px;
-    }
-
-    .roadmap-content {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-
-        figure {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            align-items: flex-start;
-            width: 100%;
-
-            img {
-                width: 100%;
-                height: auto;
-                border-radius: 5px;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            }
-
-            time {
-                font-weight: 400;
-                color: white;
-                background-color: rgb(0, 0, 0);
-                padding: 10px;
-                border-radius: 5px;
-            }
-            .posted {
-                color: $devThree;
-            }
-
-            figcaption {
-                width: 100%;
-                padding: 20px;
-                margin: 25px 0;
-                font-size: 1rem;
-                color: rgb(255, 255, 255);
-                border-radius: 10px;
-                background-color: #101010;
-                box-shadow: 7px 7px 20px 1px #000;
-                .divider {
-                    width: 4px;
-                    height: 20px;
-                    background-color: hsl(189, 100%, 20%);
-                    margin: 20px 0;
-                    display: block;
-                    vertical-align: middle;
-                    animation: floatUpDown 4s ease-in-out infinite;
-                    transition: background-color 0.3s ease;
-                }
-            }
-
-            h3 {
-                font-size: 1rem;
-                color: white;
-                font-weight: bold;
-            }
-            .showcasewide {
-                display: flex;
-                flex-wrap: wrap;
-                align-items: flex-start;
-                justify-content: space-between;
-                gap: 15px;
-
-                img {
-                    width: 100%;
-                    max-width: 530px;
-                }
-            }
-            .showcase {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-evenly;
-                gap: 15px;
-
-                img {
-                    max-width: 350px;
-                }
-            }
-        }
-    }
-}
-
-.image-title {
-    padding: 5px;
-    border: solid $devOne;
-    border-radius: 5px;
-    font-weight: 300;
-    color: $devOne;
-    margin: 0 10px 0 15px;
-}
-
 .fadeIn {
     animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
@@ -250,47 +137,58 @@ video {
     margin: auto;
 }
 
-$thumbnail-width: 100%; // Juster for at ændre bredden på thumbnail
-$play-button-bg: rgba(0, 0, 0, 0.5); // Baggrundsfarve til play-knappen
-$play-button-hover-bg: rgba(0, 0, 0, 0.8); // Hover-baggrundsfarve til play-knappen
-$play-button-size: 1.5rem; // Størrelse på play-knappen
+.assets {
+    background-color: #ffffff;
+    padding: 100px 0;
+    .floating-divider {
+        background-color: #000;
+        height: 7px;
+    }
+}
 
-.youtube-container {
-    position: relative;
-    width: $thumbnail-width;
-    max-width: 800px; // Giver en grænse for bredden af thumbnail
-
-    .youtube-thumbnail {
-        position: relative;
-        cursor: pointer;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        img {
-            width: $thumbnail-width;
-            height: auto;
-            display: block;
-        }
-
-        .play-button {
-            position: absolute;
-            background: $play-button-bg;
-            color: white;
-            font-size: $play-button-size;
-            border: none;
-            border-radius: 50%;
-            padding: 11px 15px;
-            cursor: pointer;
-            transition: background 0.3s ease;
-
-            &:hover {
-                background: $play-button-hover-bg;
-            }
+.products {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 150px 5% 50px 5%;
+    .theme-divider span {
+        background-color: #000;
+    }
+    .assetpack {
+        margin-top: 25px;
+    }
+    h2, p {
+        color: #000;
+    }
+    p {
+        font-weight: 500;
+        font-size: 1rem;
+        display: inline-block;
+        padding: 15px 32px;
+        background-color: #d0d0d0;
+        border-radius: 5px;
+        min-width: 100px;
+    }
+    button {
+        background-color: #000;
+        color: white;
+        text-transform: capitalize;
+        font-size: 1rem;
+        min-width: 250px;
+        &:hover {
+            letter-spacing: 2px;
+            background: rgba(52, 52, 52, 0.85);
+            color: beige;
         }
     }
-
-    .youtube-iframe {
-        display: none; // Skjuler iframe'en, indtil den aktiveres via JavaScript
+    .productImage {
+        height: 100%;
+        width: 100%;
+        max-width: 500px;
+    }
+    span {
+        margin-right: 20px;
     }
 }

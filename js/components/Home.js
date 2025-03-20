@@ -1,7 +1,4 @@
-import Roadmap from './microComponents/Roadmap/RoadmapOverview.js';
-
 export default {
-components: { Roadmap },
 template: `
 <main>
     <section class="Home">
@@ -27,43 +24,50 @@ template: `
     </section>
     <section class="next-section">
         <div class="intro">
-            <h2>Optimized Models for Your Projects</h2>
-            <p>
-                Browse a collection of static 3D models designed for <strong>flexibility</strong>. Whether you're
-                building <strong>immersive game environments</strong>, crafting <strong>animation projects</strong>, or
-                designing <strong>movie scenes</strong>, these assets are ready to fit <strong>seamlessly</strong> into
-                your vision.
-            </p>
             <div>
-                <h3>Your Gateway to Krag Studio <span class="highlight_1">(Roadmap)</span></h3>
+                <h3>The Vision Behind <span class="highlight_1">Krag Studio</span></h3>
                 <p>
-                    The roadmap is your gateway to everything happening at <strong>Krag Studio</strong>. Here, you can
-                    follow the progress of <strong>3D asset packs</strong> I’m developing, from initial ideas to final
-                    releases. Each pack is carefully crafted with <strong>versatility</strong> and
-                    <strong>quality</strong>
-                    in mind, tailored for use in <strong>games</strong>, <strong>animations</strong>,
-                    <strong>movies</strong>, and other creative projects.
+                    At <strong>Krag Studio</strong>, the goal is simple: to create <strong>high-quality 3D assets</strong> 
+                    that blend seamlessly into immersive worlds. Every model is designed with 
+                    <strong>atmosphere, storytelling, and usability</strong> in mind—allowing creators to focus on their vision 
+                    without technical limitations.
                 </p>
                 <p>
-                    This roadmap provides a <strong>transparent look</strong> at the creative process, showcasing what’s
-                    in
-                    <strong>development</strong>, what’s <strong>near completion</strong>, and what’s <strong>coming
-                        next</strong>. Whether it’s detailed environments, immersive props, or essential models for
-                    <strong>world-building</strong>, you’ll find a clear timeline of upcoming releases.
+                    Rather than mass-producing assets, Krag Studio follows a 
+                    <strong>thoughtful and artistic approach</strong>, ensuring that each model feels 
+                    <strong>crafted with purpose</strong>. The focus is on <strong>quality over quantity</strong>, 
+                    delivering assets that enhance the <strong>mood, immersion, and storytelling</strong> of 
+                    games, films, and animations.
                 </p>
                 <p>
-                    By keeping track of the roadmap, you can <strong>plan ahead</strong> and stay updated on the latest
-                    assets, ensuring you have everything you need to bring your vision to life. Explore the journey
-                    behind
-                    each project and discover how <strong>Krag Studio</strong> turns ideas into high-quality,
-                    ready-to-use
-                    <strong>3D models</strong>.
+                    The vision is to build a <strong>library of meaningful, versatile, and optimized assets</strong>—made 
+                    for creators who value <strong>detail, atmosphere, and timeless design</strong>.
                 </p>
             </div>
-
         </div>
+
         <div class="floating-divider"></div>
-        <Roadmap />
+    </section>
+    <section class="assets">
+        <div class="products">
+            <div>
+                <h2>Products</h2>
+                <div class="theme-divider fadeIn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="assetpack">
+                    <span><img src="/assets/svgs/package.svg"></span><router-link to="/forgottenroom"><button>The Forgotten Room</button></router-link>
+                </div>
+                <div>
+                    <span><img src="/assets/svgs/package.svg"></span><p>More coming soon ◎</p>
+                </div>
+            </div>
+            <img class="productImage" src="/assets/images/MechSculpture.webp" width="1000px" height="1000px" alt="Mecha by Krag Studio.">
+        </div>
         <div class="floating-divider"></div>
     </section>
 </main>

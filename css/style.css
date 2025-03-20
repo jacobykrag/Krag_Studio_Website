@@ -446,110 +446,6 @@ header .before {
   animation: textanimation2 3s infinite ease-in-out;
 }
 
-.roadmap {
-  display: flex;
-  align-items: stretch;
-  gap: 20px;
-  padding: 50px 20px;
-  position: relative;
-}
-.roadmap .timeline {
-  width: 5px;
-  background: linear-gradient(180deg, #00d9ff, #0062ff);
-  border-radius: 5px;
-  position: relative;
-}
-.roadmap .timelineAttachment {
-  background-color: #00d9ff;
-  width: 100px;
-  height: 5px;
-  display: inline-block;
-  border-radius: 5px;
-}
-.roadmap .roadmap-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-.roadmap .roadmap-content figure {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  align-items: flex-start;
-  width: 100%;
-}
-.roadmap .roadmap-content figure img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-.roadmap .roadmap-content figure time {
-  font-weight: 400;
-  color: white;
-  background-color: rgb(0, 0, 0);
-  padding: 10px;
-  border-radius: 5px;
-}
-.roadmap .roadmap-content figure .posted {
-  color: #3B82F6;
-}
-.roadmap .roadmap-content figure figcaption {
-  width: 100%;
-  padding: 20px;
-  margin: 25px 0;
-  font-size: 1rem;
-  color: rgb(255, 255, 255);
-  border-radius: 10px;
-  background-color: #101010;
-  box-shadow: 7px 7px 20px 1px #000;
-}
-.roadmap .roadmap-content figure figcaption .divider {
-  width: 4px;
-  height: 20px;
-  background-color: hsl(189, 100%, 20%);
-  margin: 20px 0;
-  display: block;
-  vertical-align: middle;
-  animation: floatUpDown 4s ease-in-out infinite;
-  transition: background-color 0.3s ease;
-}
-.roadmap .roadmap-content figure h3 {
-  font-size: 1rem;
-  color: white;
-  font-weight: bold;
-}
-.roadmap .roadmap-content figure .showcasewide {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 15px;
-}
-.roadmap .roadmap-content figure .showcasewide img {
-  width: 100%;
-  max-width: 530px;
-}
-.roadmap .roadmap-content figure .showcase {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  gap: 15px;
-}
-.roadmap .roadmap-content figure .showcase img {
-  max-width: 350px;
-}
-
-.image-title {
-  padding: 5px;
-  border: solid #00d9ff;
-  border-radius: 5px;
-  font-weight: 300;
-  color: #00d9ff;
-  margin: 0 10px 0 15px;
-}
-
 .fadeIn {
   animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
@@ -573,39 +469,60 @@ video {
   margin: auto;
 }
 
-.youtube-container {
-  position: relative;
-  width: 100%;
-  max-width: 800px;
+.assets {
+  background-color: #ffffff;
+  padding: 100px 0;
 }
-.youtube-container .youtube-thumbnail {
-  position: relative;
-  cursor: pointer;
+.assets .floating-divider {
+  background-color: #000;
+  height: 7px;
+}
+
+.products {
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: white;
+  padding: 150px 5% 50px 5%;
 }
-.youtube-container .youtube-thumbnail img {
-  width: 100%;
-  height: auto;
-  display: block;
+.products .theme-divider span {
+  background-color: #000;
 }
-.youtube-container .youtube-thumbnail .play-button {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.5);
+.products .assetpack {
+  margin-top: 25px;
+}
+.products h2, .products p {
+  color: #000;
+}
+.products p {
+  font-weight: 500;
+  font-size: 1rem;
+  display: inline-block;
+  padding: 15px 32px;
+  background-color: #d0d0d0;
+  border-radius: 5px;
+  min-width: 100px;
+}
+.products button {
+  background-color: #000;
   color: white;
-  font-size: 1.5rem;
-  border: none;
-  border-radius: 50%;
-  padding: 11px 15px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+  text-transform: capitalize;
+  font-size: 1rem;
+  min-width: 250px;
 }
-.youtube-container .youtube-thumbnail .play-button:hover {
-  background: rgba(0, 0, 0, 0.8);
+.products button:hover {
+  letter-spacing: 2px;
+  background: rgba(52, 52, 52, 0.85);
+  color: beige;
 }
-.youtube-container .youtube-iframe {
-  display: none;
+.products .productImage {
+  height: 100%;
+  width: 100%;
+  max-width: 500px;
+}
+.products span {
+  margin-right: 20px;
 }
 
 .about {
@@ -782,6 +699,145 @@ footer div {
   gap: 20px;
 }
 
+.forgottenRoomMain {
+  background-image: url(/assets/images/Artstation.webp);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 0;
+}
+.forgottenRoomMain::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+.forgottenRoomMain * {
+  position: relative;
+  z-index: 1;
+}
+.forgottenRoomMain h4 {
+  display: inline-block;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  background-color: rgba(27, 27, 27, 0.7);
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: solid 1px white;
+}
+.forgottenRoomMain h5 {
+  color: beige;
+  text-transform: capitalize;
+  font-style: italic;
+}
+.forgottenRoomMain p {
+  color: #B8B8B8;
+  font-size: 0.9rem;
+}
+.forgottenRoomMain strong {
+  color: white;
+}
+
+.forgottenRoom {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.forgottenRoom .overview {
+  background-color: black;
+  padding: 50px;
+  border-radius: 15px;
+  max-width: 500px;
+}
+.forgottenRoom button {
+  margin-top: 20px;
+}
+.forgottenRoom .models {
+  padding: 50px;
+  width: 100%;
+  max-width: 800px;
+}
+.forgottenRoom .models .flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+}
+.forgottenRoom .models .imageShowcase {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.forgottenRoom .models .imageShowcase img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  max-width: 215px;
+}
+
+.props {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.modularKits {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding-bottom: 100px;
+}
+
+.sectionSwitch {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+.imageShowcase {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.imageShowcase img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  max-width: 280px;
+}
+
+.guide {
+  padding: 200px 0;
+  background-color: white;
+  gap: 100px;
+}
+.guide .text {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.guide h2, .guide strong {
+  color: black;
+}
+.guide p {
+  color: #7e7e7e;
+}
+.guide .floating-divider {
+  background-color: black;
+  height: 8px;
+}
+
 @media (max-width: 576px) {
   footer {
     flex-wrap: wrap;
@@ -798,6 +854,44 @@ footer div {
   h3 {
     line-height: 2.5;
   }
+  .products {
+    gap: 25px;
+    padding: 100px;
+    justify-content: flex-end;
+  }
+  .products span img {
+    margin: 25px 0;
+  }
+  .products p {
+    margin: 0;
+  }
+  .forgottenRoomMain {
+    padding: 100px 20px;
+  }
+  .forgottenRoomMain .overview, .forgottenRoomMain .models {
+    padding: 5px;
+  }
+  .forgottenRoomMain .overview .imageShowcase, .forgottenRoomMain .models .imageShowcase {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .forgottenRoomMain .overview .imageShowcase img, .forgottenRoomMain .models .imageShowcase img {
+    max-width: 280px;
+  }
+  .forgottenRoomMain .overview .flex, .forgottenRoomMain .models .flex {
+    margin-top: 100px;
+    gap: 20px;
+  }
+  .forgottenRoomMain .imageShowcase {
+    justify-content: center;
+  }
+  .guide {
+    padding: 100px 20px;
+  }
+  .products {
+    padding: 20px;
+    justify-content: flex-start;
+  }
 }
 @media (max-width: 768px) {
   .links {
@@ -805,9 +899,6 @@ footer div {
   }
   #menu {
     display: block;
-  }
-  .roadmap {
-    padding: 0;
   }
 }
 @media (min-width: 769px) {

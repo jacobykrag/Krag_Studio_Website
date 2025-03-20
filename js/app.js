@@ -1,6 +1,7 @@
 import Home from './components/Home.js';
 import About from './components/About.js';
 import Contact from './components/Contact.js';
+import ForgottenRoom from './components/ForgottenRoom.js';
 import NotFound from './components/NotFound.js';
 import PrivacyPolicy from './components/privacy_policy.js';
 import CookieBanner from './components/CookieBanner.js';
@@ -10,9 +11,8 @@ const routes = [
     { path: '/', component: Home },
     { path: '/about', component: About },
     { path: '/contact', component: Contact },
+    { path: '/ForgottenRoom', component: ForgottenRoom },
     { path: '/privacy-policy', component: PrivacyPolicy },
-
-
     { path: '/:pathMatch(.*)*', component: NotFound },
 ];
 

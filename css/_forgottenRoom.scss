@@ -1,0 +1,145 @@
+.forgottenRoomMain {
+    background-image: url(/assets/images/Artstation.webp);
+    background-size: cover;
+    background-position: center;
+    position: relative; // Needed for the blur effect
+
+    &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(50px); // Adjust blur intensity
+        position: absolute; // Ensure it overlays the background
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    // Ensure content appears above the blurred background
+    * {
+        position: relative;
+        z-index: 1;
+    }
+    padding: 0;
+    h4 {
+        display: inline-block;
+        color: white;
+        font-size: 0.8rem;
+        font-weight: 300;
+        text-transform: uppercase;
+        background-color: rgba(27, 27, 27, 0.7);
+        padding: 10px 20px;
+        border-radius: 50px;
+        border: solid 1px white;
+    }
+    h5 {
+        color: beige;
+        text-transform: capitalize;
+        font-style: italic;
+    }
+    p {
+        color: #B8B8B8;
+        font-size: 0.9rem;
+    }
+
+    strong {
+        color: white;
+    }
+}
+
+.forgottenRoom {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    .overview {
+        background-color: black;
+        padding: 50px;
+        border-radius: 15px;
+        max-width: 500px;
+    }
+
+    button {
+        margin-top: 20px;
+    }
+
+    .models {
+        padding: 50px;
+        width: 100%;
+        max-width: 800px;
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 50px;
+        }
+        .imageShowcase {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+                max-width: 215px;
+            }
+        }
+    }
+}
+
+.props {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;    
+}
+
+.modularKits {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    padding-bottom: 100px;  
+}
+
+.sectionSwitch {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+.imageShowcase {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        max-width: 280px;
+    }
+}
+
+.guide {
+    padding: 200px 0;
+    background-color: white;
+    gap: 100px;
+    .text {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    h2, strong {
+        color: black;
+    }
+    p {
+        color: #7e7e7e;
+    }
+    .floating-divider {
+        background-color: black;
+        height: 8px;
+    }
+}
