@@ -57,7 +57,9 @@
     justify-content: space-evenly;
 
     .overview {
-        background-color: black;
+        background: rgba(37, 37, 37, 0.2);
+        border: 1px solid rgba(54, 54, 54, 0.3);
+        backdrop-filter: blur(5px);
         padding: 50px;
         border-radius: 15px;
         max-width: 500px;

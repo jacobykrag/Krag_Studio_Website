@@ -32,7 +32,7 @@ template: `
                 <strong>Bring life to the remnants of the past:</strong>
             </p>
             <h5>What story will your forgotten room tell?</h5>
-            <form style="display: inline" action="http://example.com/" method="get" target="_blank"
+            <form style="display: inline" action="https://www.fab.com/listings/d355edc4-9979-4f7f-893a-af9eee9d161d" method="get" target="_blank"
                 aria-label="Visit FAB Marketplace">
                 <button>FAB</button>
             </form>

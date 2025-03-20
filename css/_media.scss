@@ -2,58 +2,85 @@
 $small: 576px;
 $medium: 768px;
 $mediumPlus: 1024px;
+$bigScreen: 1500px;
 
 @media (max-width: $small) {
     footer {
         flex-wrap: wrap;
         align-items: center;
+        padding:  150px 0;
+        gap: 75px;
 
         h2 {
             text-align: center;
         }
+
         div {
             flex-direction: column;
             align-items: center;
-            gap: 50px;
+            gap: 75px;
         }
     }
+
+    .Home {
+        padding: 0 20px;
+    }
+
+    .contact {
+        padding: 250px 20px 50px;
+    }
+
     h3 {
         line-height: 2.5;
     }
+
     .products {
         gap: 25px;
         padding: 100px;
         justify-content: flex-end;
+
         span img {
             margin: 25px 0;
         }
+
         p {
             margin: 0;
         }
     }
+
     .forgottenRoomMain {
         padding: 100px 20px;
-        .overview, .models {
-            padding: 5px;
-            .imageShowcase {
-                justify-content: center;
-                margin-top: 20px;
+
+        .forgottenRoom {
+            padding: 100px 0 0;
+            .overview {
+                padding: 0px 15px 25px;
+            }
+            .models {
+                padding: 50px 0 0;
                 img {
-                    max-width: 280px;
+                    max-width: 370px;
                 }
             }
-            .flex {
-                margin-top: 100px;
-                gap: 20px;
+        }
+
+        .props, .modularKits {
+            padding: 0;
+        }
+
+        .imageShowcase {
+            margin-top: 50px;
+            justify-content: center;
+            img {
+                max-width: 370px;
             }
         }
-        .imageShowcase {
-            justify-content: center;
-        }
     }
+
     .guide {
         padding: 100px 20px;
     }
+
     .products {
         padding: 20px;
         justify-content: flex-start;
@@ -64,18 +91,48 @@ $mediumPlus: 1024px;
     .links {
         display: none;
     }
+
     #menu {
         display: block;
     }
 }
 
 @media (max-width: $mediumPlus) {
+    .imageShowcase {
+        justify-content: center;
+    }
 
+    .props,
+    .modularKits {
+        padding: 0 50px;
+    }
+
+    .forgottenRoom {
+        padding: 200px 20px 0;
+
+        .models {
+            padding: 100px 0 0;
+        }
+    }
 }
 
 @media (min-width: $medium + 1) {
     #menu {
-        display: none; /* Hide menu at larger screen sizes */
+        display: none;
+        /* Hide menu at larger screen sizes */
     }
 }
 
+@media (min-width: $bigScreen + 1) {
+    .forgottenRoom {
+        padding: 300px 0;
+    }
+    .forgottenRoomMain {
+        p {
+            font-size: 1rem;
+        }
+        h4, h5 {
+            font-size: 0.9rem;
+        }
+    }
+}

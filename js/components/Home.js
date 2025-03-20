@@ -62,7 +62,7 @@ template: `
                 <div class="assetpack">
                     <span><img src="/assets/svgs/package.svg"></span><router-link to="/forgottenroom"><button>The Forgotten Room</button></router-link>
                 </div>
-                <div>
+                <div class="assetpack2">
                     <span><img src="/assets/svgs/package.svg"></span><p>More coming soon ◎</p>
                 </div>
             </div>

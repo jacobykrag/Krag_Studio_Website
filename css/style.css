@@ -491,6 +491,12 @@ video {
 }
 .products .assetpack {
   margin-top: 25px;
+  display: flex;
+  align-items: center;
+}
+.products .assetpack2 {
+  display: flex;
+  align-items: center;
 }
 .products h2, .products p {
   color: #000;
@@ -755,7 +761,10 @@ footer div {
   justify-content: space-evenly;
 }
 .forgottenRoom .overview {
-  background-color: black;
+  background: rgba(37, 37, 37, 0.2);
+  border: 1px solid rgba(54, 54, 54, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   padding: 50px;
   border-radius: 15px;
   max-width: 500px;
@@ -842,6 +851,8 @@ footer div {
   footer {
     flex-wrap: wrap;
     align-items: center;
+    padding: 150px 0;
+    gap: 75px;
   }
   footer h2 {
     text-align: center;
@@ -849,7 +860,13 @@ footer div {
   footer div {
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    gap: 75px;
+  }
+  .Home {
+    padding: 0 20px;
+  }
+  .contact {
+    padding: 250px 20px 50px;
   }
   h3 {
     line-height: 2.5;
@@ -868,22 +885,27 @@ footer div {
   .forgottenRoomMain {
     padding: 100px 20px;
   }
-  .forgottenRoomMain .overview, .forgottenRoomMain .models {
-    padding: 5px;
+  .forgottenRoomMain .forgottenRoom {
+    padding: 100px 0 0;
   }
-  .forgottenRoomMain .overview .imageShowcase, .forgottenRoomMain .models .imageShowcase {
-    justify-content: center;
-    margin-top: 20px;
+  .forgottenRoomMain .forgottenRoom .overview {
+    padding: 0px 15px 25px;
   }
-  .forgottenRoomMain .overview .imageShowcase img, .forgottenRoomMain .models .imageShowcase img {
-    max-width: 280px;
+  .forgottenRoomMain .forgottenRoom .models {
+    padding: 50px 0 0;
   }
-  .forgottenRoomMain .overview .flex, .forgottenRoomMain .models .flex {
-    margin-top: 100px;
-    gap: 20px;
+  .forgottenRoomMain .forgottenRoom .models img {
+    max-width: 370px;
+  }
+  .forgottenRoomMain .props, .forgottenRoomMain .modularKits {
+    padding: 0;
   }
   .forgottenRoomMain .imageShowcase {
+    margin-top: 50px;
     justify-content: center;
+  }
+  .forgottenRoomMain .imageShowcase img {
+    max-width: 370px;
   }
   .guide {
     padding: 100px 20px;
@@ -901,8 +923,35 @@ footer div {
     display: block;
   }
 }
+@media (max-width: 1024px) {
+  .imageShowcase {
+    justify-content: center;
+  }
+  .props,
+  .modularKits {
+    padding: 0 50px;
+  }
+  .forgottenRoom {
+    padding: 200px 20px 0;
+  }
+  .forgottenRoom .models {
+    padding: 100px 0 0;
+  }
+}
 @media (min-width: 769px) {
   #menu {
-    display: none; /* Hide menu at larger screen sizes */
+    display: none;
+    /* Hide menu at larger screen sizes */
+  }
+}
+@media (min-width: 1501px) {
+  .forgottenRoom {
+    padding: 300px 0;
+  }
+  .forgottenRoomMain p {
+    font-size: 1rem;
+  }
+  .forgottenRoomMain h4, .forgottenRoomMain h5 {
+    font-size: 0.9rem;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -158,6 +158,12 @@ video {
     }
     .assetpack {
         margin-top: 25px;
+        display: flex;
+        align-items: center;
+    }
+    .assetpack2 {
+        display: flex;
+        align-items: center;
     }
     h2, p {
         color: #000;
