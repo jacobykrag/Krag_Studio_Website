@@ -96,25 +96,6 @@
     }
 }
 
-.next {
-    width: 100%;
-    max-width: 1150px;
-
-    .highlight_2 {
-        background-color: black;
-        padding: 10px;
-        border-radius: 5px;
-        color: $devOne;
-        font-weight: 300;
-    }
-
-    .product {
-        font-size: 12px;
-        display: inline-block;
-        animation: textanimation2 3s infinite ease-in-out;
-    }
-}
-
 .fadeIn {
     animation: text-focus-in 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }

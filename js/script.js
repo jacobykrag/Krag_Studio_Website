@@ -24,10 +24,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
-
-function loadVideo() {
-    const iframe = document.getElementById('youtube-iframe').querySelector('iframe');
-    iframe.src = "https://www.youtube-nocookie.com/embed/J8kHpOwSovA?si=d3n00RiKuZfBIqRm";
-    document.getElementById('youtube-iframe').style.display = 'block';
-    document.querySelector('.youtube-thumbnail').style.display = 'none';
-}

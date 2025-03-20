@@ -429,23 +429,6 @@ header .before {
   color: #ffe8a2;
 }
 
-.next {
-  width: 100%;
-  max-width: 1150px;
-}
-.next .highlight_2 {
-  background-color: black;
-  padding: 10px;
-  border-radius: 5px;
-  color: #00d9ff;
-  font-weight: 300;
-}
-.next .product {
-  font-size: 12px;
-  display: inline-block;
-  animation: textanimation2 3s infinite ease-in-out;
-}
-
 .fadeIn {
   animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
