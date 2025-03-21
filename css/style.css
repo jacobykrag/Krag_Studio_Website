@@ -722,9 +722,12 @@ footer div {
   border: solid 1px white;
 }
 .forgottenRoomMain h5 {
+  display: inline-block;
   color: beige;
-  text-transform: capitalize;
+  padding: 10px;
+  border-radius: 5px;
   font-style: italic;
+  background-color: rgb(0, 0, 0);
 }
 .forgottenRoomMain p {
   color: #B8B8B8;
@@ -868,6 +871,16 @@ footer div {
   .forgottenRoomMain {
     padding: 100px 20px;
   }
+  .forgottenRoomMain p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .forgottenRoomMain h5 {
+    font-size: 1rem;
+  }
+  .forgottenRoomMain h4 {
+    font-size: 0.9rem;
+  }
   .forgottenRoomMain .forgottenRoom {
     padding: 100px 0 0;
   }
@@ -876,6 +889,9 @@ footer div {
   }
   .forgottenRoomMain .forgottenRoom .models {
     padding: 50px 0 0;
+  }
+  .forgottenRoomMain .forgottenRoom .models .flex {
+    gap: 25px;
   }
   .forgottenRoomMain .forgottenRoom .models img {
     max-width: 370px;
@@ -892,6 +908,9 @@ footer div {
   }
   .guide {
     padding: 100px 20px;
+  }
+  .guide p {
+    line-height: 1.6;
   }
   .products {
     padding: 20px;

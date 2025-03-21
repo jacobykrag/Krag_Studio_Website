@@ -50,7 +50,16 @@ $bigScreen: 1500px;
 
     .forgottenRoomMain {
         padding: 100px 20px;
-
+        p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        h5 {
+            font-size: 1rem;
+        }
+        h4 {
+            font-size: 0.9rem;
+        }
         .forgottenRoom {
             padding: 100px 0 0;
             .overview {
@@ -58,6 +67,9 @@ $bigScreen: 1500px;
             }
             .models {
                 padding: 50px 0 0;
+                .flex {
+                    gap: 25px;
+                }
                 img {
                     max-width: 370px;
                 }
@@ -79,6 +91,9 @@ $bigScreen: 1500px;
 
     .guide {
         padding: 100px 20px;
+        p {
+            line-height: 1.6;
+        }
     }
 
     .products {
