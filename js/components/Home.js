@@ -3,7 +3,7 @@ template: `
 <main>
     <section class="Home">
         <video autoplay muted loop playsinline class="background-video">
-            <source src="/assets/videos/TheForestCompressed.mp4" type="video/mp4">
+            <source src="assets/videos/TheForestCompressed.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="hero-section">
@@ -60,13 +60,13 @@ template: `
                     <span></span>
                 </div>
                 <div class="assetpack">
-                    <span><img src="/assets/svgs/package.svg"></span><router-link to="/forgottenroom"><button>The Forgotten Room</button></router-link>
+                    <span><img src="assets/svgs/package.svg"></span><router-link to="/forgottenroom"><button>The Forgotten Room</button></router-link>
                 </div>
                 <div class="assetpack2">
-                    <span><img src="/assets/svgs/package.svg"></span><p>More coming soon ◎</p>
+                    <span><img src="assets/svgs/package.svg"></span><p>More coming soon ◎</p>
                 </div>
             </div>
-            <img class="productImage" src="/assets/images/MechSculpture.webp" width="1000px" height="1000px" alt="Mecha by Krag Studio.">
+            <img class="productImage" src="assets/images/MechSculpture.webp" width="1000px" height="1000px" alt="Mecha by Krag Studio.">
         </div>
         <div class="floating-divider"></div>
     </section>

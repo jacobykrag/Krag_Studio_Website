@@ -31,7 +31,7 @@ export default {
                 <span></span>
                 <span></span>
             </div>
-            <img src="/assets/images/JacobKrag.webp" width="2048px" height="2048px" alt="Picture of the owner of Krag Studio.">
+            <img src="assets/images/JacobKrag.webp" width="2048px" height="2048px" alt="Picture of the owner of Krag Studio.">
             <h2>About me</h2>
             <p class="description">
                 Hi, I’m Jacob Krag. 👋 My passion for 3D art lies in the ability to create something that tells a story, no matter how small the detail. I’ve always been drawn to the process of shaping ideas into visual experiences, helping to create worlds that feel alive and immersive.

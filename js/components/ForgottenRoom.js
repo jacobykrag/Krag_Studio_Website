@@ -41,22 +41,22 @@ template: `
             <div class="flex">
                 <h2>Models</h2>
                 <h4>Scroll down for more</h4>
-                <img src="/assets/svgs/arrow-down.svg">
+                <img src="assets/svgs/arrow-down.svg">
             </div>
             <div class="imageShowcase">
-                <img src="/assets/images/modularKits/AntiqueRadiator.webp" width="4096px" height="4096px"
+                <img src="assets/images/modularKits/AntiqueRadiator.webp" width="4096px" height="4096px"
                     loading="eager">
-                <img src="/assets/images/modularKits/WornBrickWallWindow.webp" width="4096px" height="4096px"
+                <img src="assets/images/modularKits/WornBrickWallWindow.webp" width="4096px" height="4096px"
                     loading="eager">
-                <img src="/assets/images/modularKits/WornWoodenDoor.webp" width="4096px" height="4096px"
+                <img src="assets/images/modularKits/WornWoodenDoor.webp" width="4096px" height="4096px"
                     loading="eager">
-                <img src="/assets/images/modularKits/WornWoodWallDoor.webp" width="4096px" height="4096px"
+                <img src="assets/images/modularKits/WornWoodWallDoor.webp" width="4096px" height="4096px"
                     loading="eager">
-                <img src="/assets/images/props/AntiquePainting.webp" width="4096px" height="4096px" loading="eager">
-                <img src="/assets/images/props/ApothecaryBottles.webp" width="4096px" height="4096px" loading="eager">
-                <img src="/assets/images/props/BankersLamp.webp" width="4096px" height="4096px" loading="eager">
-                <img src="/assets/images/props/ForgottenMirror.webp" width="4096px" height="4096px" loading="eager">
-                <img src="/assets/images/props/KeroseneLantern.webp" width="4096px" height="4096px" loading="eager">
+                <img src="assets/images/props/AntiquePainting.webp" width="4096px" height="4096px" loading="eager">
+                <img src="assets/images/props/ApothecaryBottles.webp" width="4096px" height="4096px" loading="eager">
+                <img src="assets/images/props/BankersLamp.webp" width="4096px" height="4096px" loading="eager">
+                <img src="assets/images/props/ForgottenMirror.webp" width="4096px" height="4096px" loading="eager">
+                <img src="assets/images/props/KeroseneLantern.webp" width="4096px" height="4096px" loading="eager">
             </div>
         </div>
     </section>
@@ -101,30 +101,30 @@ template: `
 
         <h5>How will you bring The Forgotten Room back to life?</h5>
         <div class="imageShowcase">
-            <img src="/assets/images/props/AntiqueBookcase.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/props/AntiqueChair.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/props/AntiqueCoatRack.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/props/AntiquePainting.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/props/AntiquePartnerDesk.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/props/ApothecaryBottles.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/props/BankersLamp.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/props/CandleTray.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/props/Dreamcatcher.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/props/FadedTapestryRug.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/props/ForgottenCargoChest.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/props/ForgottenMirror.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/props/GrandFatherClock.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/props/KeroseneLantern.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/props/LeatherBooks.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/props/PotatoBag.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/props/PuncheonBarrel.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/props/RusticStool.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/props/RusticVaultedPendant.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/props/SteamerSuitcase.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/props/VintageWineSet.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/props/WoodenCrate.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/props/WoodenPictureFrames.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/props/WornTravelRug.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/props/AntiqueBookcase.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/props/AntiqueChair.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/props/AntiqueCoatRack.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/props/AntiquePainting.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/props/AntiquePartnerDesk.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/props/ApothecaryBottles.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/props/BankersLamp.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/props/CandleTray.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/props/Dreamcatcher.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/props/FadedTapestryRug.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/props/ForgottenCargoChest.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/props/ForgottenMirror.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/props/GrandFatherClock.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/props/KeroseneLantern.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/props/LeatherBooks.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/props/PotatoBag.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/props/PuncheonBarrel.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/props/RusticStool.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/props/RusticVaultedPendant.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/props/SteamerSuitcase.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/props/VintageWineSet.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/props/WoodenCrate.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/props/WoodenPictureFrames.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/props/WornTravelRug.webp" width="4096px" height="4096px" loading="lazy">
         </div>
     </section>
     <div class="sectionSwitch">
@@ -166,16 +166,16 @@ template: `
 
         <h5>How will you shape the world of The Forgotten Room?</h5>
         <div class="imageShowcase">
-            <img src="/assets/images/modularKits/AntiqueRadiator.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/modularKits/KingPost.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/modularKits/RusticWoodenFloor.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/modularKits/SteamPipe.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/modularKits/WornBrickWall.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/modularKits/WornBrickWallWindow.webp" width="4096px" height="4096px"
+            <img src="assets/images/modularKits/AntiqueRadiator.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/modularKits/KingPost.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/modularKits/RusticWoodenFloor.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/modularKits/SteamPipe.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/modularKits/WornBrickWall.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/modularKits/WornBrickWallWindow.webp" width="4096px" height="4096px"
                 loading="lazy">
-            <img src="/assets/images/modularKits/WornWoodenCeiling.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/modularKits/WornWoodenDoor.webp" width="4096px" height="4096px" loading="lazy">
-            <img src="/assets/images/modularKits/WornWoodWallDoor.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/modularKits/WornWoodenCeiling.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/modularKits/WornWoodenDoor.webp" width="4096px" height="4096px" loading="lazy">
+            <img src="assets/images/modularKits/WornWoodWallDoor.webp" width="4096px" height="4096px" loading="lazy">
         </div>
     </section>
 </main>

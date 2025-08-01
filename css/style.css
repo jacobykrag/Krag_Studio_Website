@@ -689,7 +689,7 @@ footer div {
 }
 
 .forgottenRoomMain {
-  background-image: url(/assets/images/Artstation.webp);
+  background-image: url(assets/images/Artstation.webp);
   background-size: cover;
   background-position: center;
   position: relative;
