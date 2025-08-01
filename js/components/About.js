@@ -1,7 +1,7 @@
 export default {
     template: `
     <main class="about">
-        <img src="/assets/images/MechSculpture.webp" width="1000px" height="1000px" alt="Mecha by Krag Studio.">
+        <img src="assets/images/MechSculpture.webp" width="1000px" height="1000px" alt="Mecha by Krag Studio.">
         <div class="container">
             <h2 class="title">Your Partner in 3D Creativity</h2>
             <p class="description">
